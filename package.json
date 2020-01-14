@@ -1,0 +1,16 @@
+{
+  "name": "Modulo_nativo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nan": "^2.14.0",
+    "node-gyp": "^6.1.0"
+  }
+}
