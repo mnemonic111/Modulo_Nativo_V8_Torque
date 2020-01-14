@@ -72,6 +72,6 @@ luego tenñémos que llamar a la funcion creada para realizar la suma:
 
 Y por último mostrar por consola nuestro resultado:
 
-console.log(`El resultado es: ${sum}`);
+> console.log(`El resultado es: ${sum}`);
 
 * Para mayor detalle se puede consultar el fichero "*index.js*"
