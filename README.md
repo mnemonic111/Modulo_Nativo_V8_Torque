@@ -56,4 +56,22 @@ _*include_dirs*_: Directorios y dependencias que se incluyen.
 
 # Probar nuestro nuevo módulo.
 
-- En primer lugar debemos de crear un nuevo archivo, esta vez llamado "*index.js*"
+- En primer lugar debemos de crear un nuevo archivo, esta vez llamado "*index.js*" el cual contendrá el import de nuestro módulo compilado. 
+
+Para ello lo que tenemos que hacer es o bien importarlo mediante la librería "*binding*"
+
+> const mymodule = require("binding")("mymodule");
+
+O bien directamente el compilado de nuestro módulo :
+
+> const mymodulecomp = require('./build/Release/mymodule');
+
+luego tenñémos que llamar a la funcion creada para realizar la suma:
+
+> const sum = mymodulecomp.suma(1,3);
+
+Y por último mostrar por consola nuestro resultado:
+
+console.log(`El resultado es: ${sum}`);
+
+* Para mayor detalle se puede consultar el fichero "*index.js*"
