@@ -14,7 +14,7 @@ NAN_METHOD(suma) {
 
     //obtenemos los valores
     double a = info[0]->NumberValue();
-    double b = info[0]->NumberValue();
+    double b = info[1]->NumberValue();
 
     //Calculamos la suma
     Local<Number> result = Nan::New(a+b);
